@@ -1,4 +1,4 @@
-var colors = require('colors'),
+var colors     = require('colors'),
     downloader = require('./downloader.js');
 
 var parseMedia = function(media,originalTweet,callback) {

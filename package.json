@@ -1,16 +1,20 @@
 {
-  "name": "twitter-photo-downloader",
-  "description": "Downloads all photos from your twitter archive and replaces the links to local ones",
-  "version": "0.0.1",
-  "author": "Laura gonzález",
-  "homepage": "",
-  "scripts": { "start": "app.js" },
-  "dependencies": {
-    "fs": "*",
-    "request": "*",
-    "mkdirp": "x",
-    "colors": "1.0.3",
-    "require-dir": "*",
-    "command-line-args": "0.5.9"
-  }
+	"name": "twitter-photo-downloader",
+	"description": "Downloads all photos from your twitter archive and replaces the links to local ones",
+	"version": "0.1.0",
+	"author": "Laura gonzález",
+	"homepage": "",
+	"main": "app.js",
+	"private":true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lawwrr/Twitter-photo-downloader"
+	},
+	"dependencies": {
+		"mkdirp": "0.5.0",
+		"request": "2.54.0",
+		"colors": "1.0.3",
+		"require-dir": "0.3.0",
+		"command-line-args": "0.5.9"
+	}
 }
