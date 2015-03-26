@@ -1,5 +1,5 @@
 # Twitter Photo Downloader
-Download all (available) photos from your twitter archive.
+Download all (available) photos on your twitter archive.
 
 # Usage
 	$ npm install
@@ -7,7 +7,7 @@ Download all (available) photos from your twitter archive.
 
 Download your Twitter archive from your [account page](https://twitter.com/settings/account), unzip it and run TPD giving the top archive folder (the one with index.html, data and lib folders) as the -a argument. By default only errors will be shown.
 
-Once the script is done, your photos will be available directly on the archive, the raw images will be on the data/media folder inside your archive
+Once the script is done, your browseable tweet archive will contain all your photos locally intead of pulling them form twitter.com. The image files will be on the data/media folder if you need them.
 
 # FAQ
 ## Are videos and gifs downloaded too?
