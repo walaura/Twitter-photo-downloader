@@ -27,8 +27,8 @@ else {
 	Grailbird = {};
 	Grailbird.data = {};
 	paths = {
-		tweets: options.archive+'data/js/tweets/',
-		media:  options.archive+'data/media/'
+		tweets: options.archive+'/data/js/tweets/',
+		media:  options.archive+'/data/media/'
 	}
 	
 	requireDir(paths.tweets);
@@ -37,7 +37,7 @@ else {
 		for(var month in Grailbird.data) {
 			tweets.loop(Grailbird.data[month],function(data){
 				if(!options.dry) {
-					var pack = 'Grailbird.data.'+month+' = '+"\n"+JSON.stringify(data);
+					var pack = 'Grailbird.data.'+month+' = '+"\n"+JSON.stringify(data, null, "\t");
 					var file = month.substr(7);
 					fs.writeFile(paths.tweets+file+'.js', pack);	
 				}
