@@ -15,7 +15,6 @@ var parseMedia = function(media,originalTweet,callback) {
 	
 	var download  = downloader.get(media.media_url,path);
 	download.on('success',function(response){
-		//console.log('[ OK ] Downloaded '+filename);
 		media.media_url = path;
 		callback(media);
 	});
@@ -34,25 +33,33 @@ var parseMedia = function(media,originalTweet,callback) {
 	
 }
 
-var loop = function(tweets,callback) {
+var loop = function(month,tweets,callback) {
 	var total = 0;
+	var totalWithMedia = 0;
+	var totalWithMediaAndFinished = 0;
+	var hasAnyMedia = false;
 	var calledBack = false;
+	
+	var onParsedMedia = function(){
+		if(total === tweets.length && totalWithMediaAndFinished === totalWithMedia) {
+			callback(month,tweets)
+		}
+	}
+	
 	tweets.map(function(tweet){
 		total++;
 		if(tweet.entities.media && tweet.entities.media.length > 0) {
+			hasAnyMedia = true;
 			tweet.entities.media.map(function(media){
+				totalWithMedia++;
 				parseMedia(media,tweet,function(newMedia){
 					media = newMedia;
-					if(total === tweets.length) {
-						calledBack = true;
-						callback(tweets)
-					}
+					totalWithMediaAndFinished++;
+					onParsedMedia();
 				});
 			});	
 		}
-		if(total === tweets.length && !calledBack) {
-			callback(tweets)
-		}
+		onParsedMedia();
 	});
 }
 

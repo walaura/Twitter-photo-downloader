@@ -35,11 +35,13 @@ else {
 	
 	mkdirp(paths.media,function(){
 		for(var month in Grailbird.data) {
-			tweets.loop(Grailbird.data[month],function(data){
+			tweets.loop(month,Grailbird.data[month],function(month,data){
 				if(!options.dry) {
 					var pack = 'Grailbird.data.'+month+' = '+"\n"+JSON.stringify(data, null, "\t");
 					var file = month.substr(7);
-					fs.writeFile(paths.tweets+file+'.js', pack);	
+					fs.writeFile(paths.tweets+file+'.js', pack, function(){
+						console.log(('[PACK] repacked tweets for '+file).green);
+					});
 				}
 			});
 		}
