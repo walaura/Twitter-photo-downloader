@@ -5,9 +5,11 @@ Download all (available) photos on your twitter archive.
 	$ npm install
 	$ node app.js --help
 
-Download your Twitter archive from your [account page](https://twitter.com/settings/account), unzip it and run TPD giving the top archive folder (the one with index.html, data and lib folders) as the -a argument. By default only errors will be shown.
+Download your Twitter archive from your [account page](https://twitter.com/settings/account), unzip it and run TPD giving the top archive folder (the one with index.html, data and lib folders) as the -a argument.
 
-Once the script is done, your browseable tweet archive will contain all your photos locally intead of pulling them form twitter.com. The image files will be on the data/media folder if you need them.
+Once the script is done, your browsable tweet archive will contain all your photos locally intead of pulling them form twitter.com. The image files will be on the data/media folder if you need them.
+
+*Note:* Sometimes you'll get 404 errors on some tweets that still exist, that's twitter acting silly. Just wait a couple of hours and run the script again. Or follow the links to get the photos yourself ~~you lazy ass~~.
 
 # FAQ
 ## Are videos and gifs downloaded too?
