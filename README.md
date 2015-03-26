@@ -11,7 +11,10 @@ Once the script is done, your browseable tweet archive will contain all your pho
 
 # FAQ
 ## Are videos and gifs downloaded too?
-I have no idea, give it a try!
+Nope, for videos and gifs twitter only provides a png still frame. There might be a way around this by scraping the linked page but for now, you'll only get a PNG
+
+## And photos from RTs?
+Surprisingly yeah. Enjoy all those buzzfeed posts and emergency kittens littering your image folder
 
 ## What about image galleries?
-YessssmaybeIthink
+Yup, all files on multiphoto tweets are downloaded
