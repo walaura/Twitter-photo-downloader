@@ -2,7 +2,7 @@ var mkdirp = require('mkdirp'),
     fs = require('fs'),
     cliArgs = require("command-line-args"),
     requireDir = require("require-dir"),
-    tweets = require('./tweets.js');
+    tweets = require('./stuff/tweets.js');
     
 var cli = cliArgs([
     	{ name: "archive", alias: "a", type: String, description: "(REQUIRED) Path to your twitter archive" },
