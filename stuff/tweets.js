@@ -13,7 +13,7 @@ var parseMedia = function(media,originalTweet,callback) {
 	var path      = paths.media+filename+'.'+extension;
 	
 	
-	var download  = downloader.get(media.media_url,path);
+	var download  = downloader.get(media.media_url+':large',path);
 	download.on('success',function(response){
 		media.media_url = path;
 		callback(media);
