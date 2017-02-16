@@ -1,14 +1,14 @@
 {
 	"name": "twitter-photo-downloader",
 	"description": "Downloads all photos from your twitter archive and replaces the links to local ones",
-	"version": "0.1.0",
-	"author": "Laura gonzález",
+	"version": "0.1.1",
+	"author": "Laura mayhem",
 	"homepage": "",
 	"main": "app.js",
 	"private":true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/lawwrr/Twitter-photo-downloader"
+		"url": "https://github.com/walaura/Twitter-photo-downloader"
 	},
 	"dependencies": {
 		"mkdirp": "0.5.0",
