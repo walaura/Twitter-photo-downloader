@@ -9,7 +9,13 @@ Download your Twitter archive from your [account page](https://twitter.com/setti
 
 Once the script is done, your browsable tweet archive will contain all your photos locally intead of pulling them form twitter.com. The image files will be on the data/media folder if you need them.
 
-*Note:* Sometimes you'll get 404 errors on some tweets that still exist, that's twitter acting silly. Just wait a couple of hours and run the script again. Or follow the links to get the photos yourself ~~you lazy ass~~.
+*Note:* Sometimes you'll get 404 errors on some tweets that still exist, that's twitter acting up. Just wait a couple of hours and run the script again. Or follow the links to get the photos yourself
+
+# TODO
+* Right now on some macs the whole thing just falls apart from too many fs writes it would be ideal to queue that up but i dont wanna deal with streams ever
+* Put this on npm maybe iunno
+
+Contributions are ✨ super welcome ✨
 
 # FAQ
 ## Are videos and gifs downloaded too?
