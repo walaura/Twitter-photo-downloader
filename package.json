@@ -12,7 +12,7 @@
 	},
 	"dependencies": {
 		"mkdirp": "0.5.0",
-		"request": "2.54.0",
+		"request": "2.84.0",
 		"colors": "1.0.3",
 		"require-dir": "0.3.0",
 		"command-line-args": "0.5.9"
