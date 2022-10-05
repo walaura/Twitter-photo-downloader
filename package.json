@@ -11,10 +11,10 @@
 		"url": "https://github.com/walaura/Twitter-photo-downloader"
 	},
 	"dependencies": {
-		"mkdirp": "0.5.0",
-		"request": "2.54.0",
+		"mkdirp": "0.5.2",
+		"request": "2.87.0",
 		"colors": "1.0.3",
 		"require-dir": "0.3.0",
-		"command-line-args": "0.5.9"
+		"command-line-args": "1.0.0"
 	}
 }
